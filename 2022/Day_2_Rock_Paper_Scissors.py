@@ -1,3 +1,4 @@
+# from enum import au
 from get_input import fetch_input
 
 rock, paper, scissor = 1,2,3
