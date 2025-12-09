@@ -13,6 +13,7 @@ This repository houses a long-term effort to chip away at every Advent of Code p
 │   ├── Day_2_Rock_Paper_Scissors.py
 │   ├── Day_3_Rucksack_Reorganization.py
 │   ├── Day_4_Camp_Cleanup.py
+│   ├── Day_5_Supply_Stacks.py
 │   ├── Day_6_Tuning_Trouble.py
 │   └── get_input.py            # shared helper for fetching puzzle input
 ├── utils/
@@ -27,6 +28,7 @@ This repository houses a long-term effort to chip away at every Advent of Code p
 - Day 2: Rock Paper Scissors – Part 1 & 2 solved.
 - Day 3: Rucksack Reorganization – Part 1 & 2 solved.
 - Day 4: Camp Cleanup – Part 1 solved (Part 2 WIP; experimenting with `tqdm` and function-based structure).
+- Day 5: Supply Stacks – Part 1 & 2 solved, includes parsing of the crate drawing and both move variants.
 - Day 6: Tuning Trouble – Part 1 & 2 solved, serves as a template for toggling between real and test inputs.
 
 Future years (2015–2021, 2023+) should follow the naming convention `YEAR/Day_<n>_<puzzle_name>.py` so they stay easy to navigate.
