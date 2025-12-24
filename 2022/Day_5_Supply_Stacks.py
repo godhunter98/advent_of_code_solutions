@@ -51,6 +51,7 @@ def move_container_2(stacks:list,fr:int,to:int,count:int)->list:
     else:
         tbm = stacks[fr][-count:]
         stacks[to].extend(tbm)
+        # stacks[to] += tbm #Both are fine to do, i prefer the extend!
         stacks[fr]=stacks[fr][:-count]
     return stacks
 
