@@ -10,26 +10,12 @@ nee_input = '''30373
 '''
 
 def parse_input(sample:str)->list[list[int]]:
-    ls_strings = []
-    ls_ints = []
-    for i in sample_input.splitlines():
-        ls_strings.append(list(i))
-    for i in ls_strings:
-        intermittend_ls =[]
-        for x in i:
-            intermittend_ls.append(int(x))
-        ls_ints.append(intermittend_ls)
-    return ls_ints
+    return [[int(ch) for ch in line.strip()] for line in sample.splitlines() if line.strip()]
+
+# Both these functions, now use list comprehension, compressing our code down to just 4 lines from more than 20.
 
 def get_coordinates(ls:list)->list[list[list[int]]]:
-    coordinates = []
-    # This logic won't work as we're simply overwriting the old key.
-    for x,sublist in enumerate(ls):
-        sub_coordinates = []
-        for y,nums in enumerate(sublist):
-            sub_coordinates.append([x,y])
-        coordinates.append(sub_coordinates)
-    return coordinates
+    return [[[x,y] for y,char in enumerate(sublist)]for x,sublist in enumerate(ls)]
 
 def neighbourhood(grid:list,r,c):
     curr = grid[r][c]
